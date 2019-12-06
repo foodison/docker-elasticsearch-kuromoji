@@ -1,3 +1,11 @@
+# docker-elasticsearch-kuromoji
+
+## Run
+
+```
+docker run -p 9200:9200 -e discovery.type=single-node foodisondev/elasticsearch-kuromoji:7.4.2
+```
+
 ## Build
 
 ```
