@@ -1,3 +1,3 @@
-ARG elasticsearch_version=latest
-FROM elasticsearch:$elasticsearch_version
+ARG ELASTICSEARCH_VERSION
+FROM docker.elastic.co/elasticsearch/elasticsearch:$ELASTICSEARCH_VERSION
 RUN elasticsearch-plugin install analysis-kuromoji
